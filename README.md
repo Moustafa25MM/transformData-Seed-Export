@@ -4,25 +4,35 @@ This project is designed to standardize a MongoDB collection of restaurant brand
 
 ## Project Structure
 
+- `data/`:
+  - `brands.json`: Initial dataset of restaurant brands with potential format inconsistencies. This file serves as the input for the data transformation process.
+  - `modifiedBrands.json`: Output file that contains the transformed data in the correct format, along with any new seed data that has been added.
+- `reports/`: The directory where exported Excel files are saved.
 - `src/helpers/`: Contains utility functions for data transformation, seeding, and exporting.
 - `src/interfaces/`: TypeScript interfaces for the brand model and extra fields.
 - `src/models/`: Mongoose model for the brand collection.
 - `src/mongooseConnection.ts`: Sets up the MongoDB connection using Mongoose.
-- `reports/`: The directory where exported Excel files are saved.
-- `src/util/`: Contails Winston logger middleware to use instead of console.log
+- `src/util/`: Contails Winston logger middleware to use instead of `console.log`.
 
 ## Running the Project
 
-To run the project, ensure that you have MongoDB running,
-Then create .env file similar to .envExample file and add
-MONGO_DB=your_mongodb_connection
+Before starting the project, make sure MongoDB is running. Then create a `.env` file similar to the `.envExample` file and add your MongoDB connection string:
 
-Then run the following commands:
+```plaintext
+MONGO_DB=your_mongodb_connection
+```
+
+To install dependencies and build the project, run the following commands:
 
 ```bash
 npm install
-npm start
+npm build
+```
 
+To start the application, use:
+
+```bash
+npm start --> This will run the built app
 ```
 
 ## Project Details
@@ -38,3 +48,29 @@ npm start
 
 - Notes
   All transformations and seeding are performed within the same MongoDB collection and database.
+
+## Usage
+
+### Transforming Data
+
+To standardize and correct the format of the existing data in your MongoDB collection, run the data transformation script:
+
+```bash
+npm run transform:data
+```
+
+### Seeding the Database
+
+To add new brand documents to your MongoDB collection, use the seed script:
+
+```bash
+npm run seed
+```
+
+### Exporting Data to Excel
+
+To export the current state of the MongoDB collection to an Excel file, you can run the export script:
+
+```bash
+npm run export
+```
