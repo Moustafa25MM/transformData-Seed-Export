@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import { faker } from '@faker-js/faker';
 import BrandModel from '../models/Brand.model';
+import logger from '../util/logger';
 
 export const seedDatabase = async () => {
   try {
@@ -20,8 +21,8 @@ export const seedDatabase = async () => {
       await brand.save();
     }
 
-    console.log('Database seeded!');
+    logger.info('Database seeded!');
   } catch (error) {
-    console.error('Error seeding database:', error);
+    logger.error('Error seeding database:', error);
   }
 };

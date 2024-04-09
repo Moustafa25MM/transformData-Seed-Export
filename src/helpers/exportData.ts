@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { IBrand } from '../interfaces/Brand.interface';
 import BrandModel from '../models/Brand.model';
+import logger from '../util/logger';
 
 export const exportToExcel = async () => {
   try {
@@ -42,14 +43,14 @@ export const exportToExcel = async () => {
     const filePath = path.join(reportsDir, excelFileName);
 
     await workbook.xlsx.writeFile(filePath);
-    console.log(`Exported data to ${filePath}`);
+    logger.info(`Exported data to ${filePath}`);
   } catch (error: any) {
     if (error.code === 'EBUSY') {
-      console.error(
+      logger.error(
         'The file is busy or locked. Please close any programs that might be using it and try again.'
       );
     } else {
-      console.error('An error occurred:', error);
+      logger.error('An error occurred:', error);
     }
   }
 };

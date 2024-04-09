@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 import { IBrand } from '../interfaces/Brand.interface';
 import BrandModel from '../models/Brand.model';
 import { IBrandExtraFields } from '../interfaces/ExtraBrand.interface';
+import logger from '../util/logger';
 
 export async function transformData(): Promise<void> {
   try {
@@ -55,7 +56,7 @@ export async function transformData(): Promise<void> {
 
       const validationError = new BrandModel(updatedBrandFields).validateSync();
       if (validationError) {
-        console.error(
+        logger.error(
           `Validation error for brand _id: ${brand._id}`,
           validationError
         );
@@ -77,8 +78,8 @@ export async function transformData(): Promise<void> {
         });
     }
 
-    console.log('Data transformation complete');
+    logger.info('Data transformation complete');
   } catch (error) {
-    console.error('Error during data transformation:', error);
+    logger.error('Error during data transformation:', error);
   }
 }
