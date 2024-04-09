@@ -67,7 +67,7 @@ To add new brand documents to your MongoDB collection, use the seed script:
 npm run seed
 ```
 
-### Exporting Data to Excel
+### Exporting Data
 
 To export the current state of the MongoDB collection to an Excel file and Json file, you can run the export script:
 
