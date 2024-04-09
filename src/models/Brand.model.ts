@@ -4,7 +4,7 @@ import { IBrand } from '../interfaces/Brand.interface';
 export const brandSchema = new Schema<IBrand>({
 	brandName: {
 		type: String,
-		required: [true, 'Brand name is required'],
+		required: [true, 'Brand name is required'], 
 		trim: true,
 	},
 	yearFounded: {
