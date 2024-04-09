@@ -4,6 +4,7 @@ import path from 'path';
 import { IBrand } from '../interfaces/Brand.interface';
 import BrandModel from '../models/Brand.model';
 import logger from '../util/logger';
+import { connectToMongoDB } from '../mongooseConnection';
 
 export const exportToExcel = async () => {
   try {
@@ -54,3 +55,21 @@ export const exportToExcel = async () => {
     }
   }
 };
+
+if (require.main === module) {
+  connectToMongoDB().then(() => {
+    exportToExcel()
+      .then(() => {
+        logger.info(`Exported data Using Script`);
+      })
+      .catch((error: any) => {
+        if (error.code === 'EBUSY') {
+          logger.error(
+            'The file is busy or locked. Please close any programs that might be using it and try again.'
+          );
+        } else {
+          logger.error('An error occurred When Using Script:', error);
+        }
+      });
+  });
+}

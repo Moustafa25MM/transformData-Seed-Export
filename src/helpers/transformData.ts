@@ -3,8 +3,9 @@ import { IBrand } from '../interfaces/Brand.interface';
 import BrandModel from '../models/Brand.model';
 import { IBrandExtraFields } from '../interfaces/ExtraBrand.interface';
 import logger from '../util/logger';
+import { connectToMongoDB } from '../mongooseConnection';
 
-export async function transformData(): Promise<void> {
+export const transformData = async (): Promise<void> => {
   try {
     const brands = await BrandModel.find({}).lean<IBrandExtraFields[]>();
 
@@ -82,4 +83,19 @@ export async function transformData(): Promise<void> {
   } catch (error) {
     logger.error('Error during data transformation:', error);
   }
+};
+
+if (require.main === module) {
+  connectToMongoDB().then(() => {
+    transformData()
+      .then(() => {
+        logger.info('Data transformation complete using Script.');
+      })
+      .catch((error) => {
+        logger.error(
+          'Error during data transformation when using Script :',
+          error
+        );
+      });
+  });
 }

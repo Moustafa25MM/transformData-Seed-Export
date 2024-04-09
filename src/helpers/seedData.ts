@@ -1,7 +1,7 @@
-import mongoose from 'mongoose';
 import { faker } from '@faker-js/faker';
 import BrandModel from '../models/Brand.model';
 import logger from '../util/logger';
+import { connectToMongoDB } from '../mongooseConnection';
 
 export const seedDatabase = async () => {
   try {
@@ -26,3 +26,15 @@ export const seedDatabase = async () => {
     logger.error('Error seeding database:', error);
   }
 };
+
+if (require.main === module) {
+  connectToMongoDB().then(() => {
+    seedDatabase()
+      .then(() => {
+        logger.info('Database seeding completed using Script.');
+      })
+      .catch((error) => {
+        logger.error('Database seeding failed when using Script :', error);
+      });
+  });
+}
