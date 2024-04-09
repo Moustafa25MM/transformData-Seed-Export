@@ -1,4 +1,5 @@
-[{
+[
+  {
     "_id": {
       "$oid": "66069ff93007b006635c0245"
     },
@@ -31,7 +32,7 @@
     },
     "brandName": "Modern Granite Fish",
     "yearFounded": null,
-      "yearCreated": "1970",
+    "yearCreated": "1970",
     "headquarters": "Kundebury",
     "numberOfLocations": "perspiciatis"
   },
@@ -50,7 +51,7 @@
     },
     "brandName": "Oriental Plastic Pants",
     "yearFounded": null,
-      "yearCreated": 1970,
+    "yearCreated": 1970,
     "headquarters": "Wardfort",
     "numberOfLocations": "benevolentia"
   },
@@ -93,4 +94,5 @@
     "headquarters": "North Ralphport",
     "numberOfLocations": "contego",
     "brand": ""
-  }]
+  }
+]

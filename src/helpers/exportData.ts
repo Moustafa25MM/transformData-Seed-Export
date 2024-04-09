@@ -29,7 +29,7 @@ export const exportToExcel = async () => {
         headquarters: brand.headquarters,
         numberOfLocations: brand.numberOfLocations,
         createdAt: brand.createdAt?.toISOString(),
-        updatedAt: brand.updatedAt?.toISOString()
+        updatedAt: brand.updatedAt?.toISOString(),
       });
     });
 
@@ -43,9 +43,11 @@ export const exportToExcel = async () => {
 
     await workbook.xlsx.writeFile(filePath);
     console.log(`Exported data to ${filePath}`);
-  } catch (error:any) {
+  } catch (error: any) {
     if (error.code === 'EBUSY') {
-      console.error('The file is busy or locked. Please close any programs that might be using it and try again.');
+      console.error(
+        'The file is busy or locked. Please close any programs that might be using it and try again.'
+      );
     } else {
       console.error('An error occurred:', error);
     }
