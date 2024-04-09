@@ -56,19 +56,46 @@ export const exportToExcel = async () => {
   }
 };
 
+export const exportToJson = async () => {
+  console.log('object');
+  try {
+    const brands = await BrandModel.find({});
+    const brandsData = JSON.stringify(brands, null, 2);
+
+    const reportsDir = path.join(__dirname, '../../reports');
+    if (!fs.existsSync(reportsDir)) {
+      fs.mkdirSync(reportsDir, { recursive: true });
+    }
+
+    const jsonFileName = 'ModifiedBrands.json';
+    const filePath = path.join(reportsDir, jsonFileName);
+
+    fs.writeFileSync(filePath, brandsData);
+    logger.info(`Exported data to ${filePath}`);
+  } catch (error: any) {
+    logger.error('An error occurred while exporting to JSON:', error);
+  }
+};
+
 if (require.main === module) {
   connectToMongoDB().then(() => {
     exportToExcel()
       .then(() => {
-        logger.info(`Exported data Using Script`);
+        logger.info(`Excel export complete. Starting JSON export...`);
+        return exportToJson();
       })
-      .catch((error: any) => {
+      .then(() => {
+        logger.info(
+          `JSON export complete. Data Exported Using Script Successfully.`
+        );
+      })
+      .catch((error) => {
         if (error.code === 'EBUSY') {
           logger.error(
             'The file is busy or locked. Please close any programs that might be using it and try again.'
           );
         } else {
-          logger.error('An error occurred When Using Script:', error);
+          logger.error('An error occurred when using script:', error);
         }
       });
   });
