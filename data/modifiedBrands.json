@@ -1,0 +1,291 @@
+[{
+  "_id": {
+    "$oid": "66069ff93007b006635c0245"
+  },
+  "brandName": "Ward, Hand and Ortiz",
+  "headquarters": "Jastside",
+  "numberOfLocations": 2132,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:18.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:18.981Z"
+  },
+  "yearFounded": 1970
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c0246"
+  },
+  "brandName": "Ergonomic Frozen Bacon",
+  "yearFounded": 1600,
+  "headquarters": "Gavinstead",
+  "numberOfLocations": 1,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:18.988Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:18.990Z"
+  }
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c0247"
+  },
+  "brandName": "Breitenberg, Greenholt and Ledner",
+  "yearFounded": 1982,
+  "headquarters": "Fort Lenna",
+  "numberOfLocations": 1000,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:18.993Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:18.995Z"
+  }
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c0248"
+  },
+  "brandName": "Modern Granite Fish",
+  "yearFounded": 1970,
+  "headquarters": "Kundebury",
+  "numberOfLocations": 1,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:18.997Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:18.999Z"
+  }
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c0249"
+  },
+  "brandName": "Gorgeous Granite Pizza",
+  "headquarters": "Jonesborough",
+  "numberOfLocations": 1,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.002Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.004Z"
+  },
+  "yearFounded": 1980
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c024a"
+  },
+  "brandName": "Oriental Plastic Pants",
+  "yearFounded": 1970,
+  "headquarters": "Wardfort",
+  "numberOfLocations": 1,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.006Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.007Z"
+  }
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c024b"
+  },
+  "brandName": "Refined Granite Towels",
+  "yearFounded": 1600,
+  "headquarters": "Lemkeland",
+  "numberOfLocations": 1,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.009Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.011Z"
+  }
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c024c"
+  },
+  "brandName": "Corkery Inc",
+  "yearFounded": 1935,
+  "numberOfLocations": 9200,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.013Z"
+  },
+  "headquarters": "DuBuqueburgh",
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c024d"
+  },
+  "yearFounded": 1600,
+  "headquarters": "West Mylesboro",
+  "numberOfLocations": 1,
+  "brandName": "Licensed Concrete Tuna",
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.016Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.018Z"
+  }
+},{
+  "_id": {
+    "$oid": "66069ff93007b006635c024e"
+  },
+  "brandName": "Generic Cotton Pizza",
+  "yearFounded": 1600,
+  "headquarters": "North Ralphport",
+  "numberOfLocations": 1,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.020Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.022Z"
+  }
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f599023212"
+  },
+  "brandName": "Brakus, Brown and Renner",
+  "yearFounded": 1759,
+  "headquarters": "West Adell, Venezuela",
+  "numberOfLocations": 5357,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.029Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.029Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f599023214"
+  },
+  "brandName": "Rempel LLC",
+  "yearFounded": 1673,
+  "headquarters": "East Gayleborough, Belgium",
+  "numberOfLocations": 6396,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.035Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.035Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f599023216"
+  },
+  "brandName": "Schinner - Treutel",
+  "yearFounded": 1641,
+  "headquarters": "Brianaton, Anguilla",
+  "numberOfLocations": 5449,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.038Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.038Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f599023218"
+  },
+  "brandName": "Rohan - Von",
+  "yearFounded": 1640,
+  "headquarters": "Gerlachstead, Sint Maarten",
+  "numberOfLocations": 7635,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.041Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.041Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f59902321a"
+  },
+  "brandName": "Stark, Metz and Strosin",
+  "yearFounded": 1810,
+  "headquarters": "Feestfield, Andorra",
+  "numberOfLocations": 924,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.044Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.044Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f59902321c"
+  },
+  "brandName": "Grimes LLC",
+  "yearFounded": 1848,
+  "headquarters": "Port Josianne, Kiribati",
+  "numberOfLocations": 4429,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.048Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.048Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f59902321e"
+  },
+  "brandName": "Kovacek, Jacobson and Goyette",
+  "yearFounded": 1851,
+  "headquarters": "Tremblaytown, Palau",
+  "numberOfLocations": 1787,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.050Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.050Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f599023220"
+  },
+  "brandName": "Swaniawski, Rohan and West",
+  "yearFounded": 1974,
+  "headquarters": "Fort Eleonoreborough, Turkmenistan",
+  "numberOfLocations": 6050,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.052Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.052Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f599023222"
+  },
+  "brandName": "Runolfsdottir and Sons",
+  "yearFounded": 1949,
+  "headquarters": "Kohlerhaven, American Samoa",
+  "numberOfLocations": 499,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.054Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.054Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6614b303f6c830f599023224"
+  },
+  "brandName": "Shields - Ernser",
+  "yearFounded": 1945,
+  "headquarters": "Fort Antoninaton, Turks and Caicos Islands",
+  "numberOfLocations": 1281,
+  "createdAt": {
+    "$date": "2024-04-09T03:16:19.056Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-09T03:16:19.056Z"
+  },
+  "__v": 0
+}]
