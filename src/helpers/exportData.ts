@@ -57,7 +57,6 @@ export const exportToExcel = async () => {
 };
 
 export const exportToJson = async () => {
-  console.log('object');
   try {
     const brands = await BrandModel.find({});
     const brandsData = JSON.stringify(brands, null, 2);
