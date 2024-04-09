@@ -2,3 +2,4 @@
 {"level":"info","message":"Data transformation complete","service":"transform-data-service"}
 {"level":"info","message":"Database seeded!","service":"transform-data-service"}
 {"level":"info","message":"Exported data to C:\\Users\\Dell\\OneDrive\\Desktop\\plenyTask\\reports\\ModifiedBrands.xlsx","service":"transform-data-service"}
+{"level":"info","message":"Exported data to C:\\Users\\Dell\\OneDrive\\Desktop\\plenyTask\\reports\\ModifiedBrands.json","service":"transform-data-service"}

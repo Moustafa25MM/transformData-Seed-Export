@@ -1,13 +1,13 @@
 # Restaurant Brands Data Transformation and Seeding
 
-This project is designed to standardize a MongoDB collection of restaurant brands and extend the dataset with new seed data. It includes scripts to transform data to a correct format, seed the database with new documents, and export the updated collection to an Excel file.
+This project is designed to standardize a MongoDB collection of restaurant brands and extend the dataset with new seed data. It includes scripts to transform data to a correct format, seed the database with new documents, and export the updated collection to an Excel file and Json file.
 
 ## Project Structure
 
 - `data/`:
   - `brands.json`: Initial dataset of restaurant brands with potential format inconsistencies. This file serves as the input for the data transformation process.
-  - `modifiedBrands.json`: Output file that contains the transformed data in the correct format, along with any new seed data that has been added.
-- `reports/`: The directory where exported Excel files are saved.
+  - `modifiedBrands.json`: Output file from MongoDB that contains the transformed data in the correct format, along with any new seed data that has been added.
+- `reports/`: The directory where exported Excel and Json files are saved.
 - `src/helpers/`: Contains utility functions for data transformation, seeding, and exporting.
 - `src/interfaces/`: TypeScript interfaces for the brand model and extra fields.
 - `src/models/`: Mongoose model for the brand collection.
@@ -44,7 +44,7 @@ npm start --> This will run the built app
   The seedDatabase function generates new brand documents using the Faker.js library to create realistic test data. Each document adheres to the schema defined in brands-schema.ts.
 
 - Exporting Data
-  The exportToExcel function takes the transformed and seeded data from the MongoDB collection and exports it to an Excel file. The file is saved in the reports/ directory.
+  The exportToExcel & exportToJson function takes the transformed and seeded data from the MongoDB collection and exports it to an Excel file & Json file. The files are saved in the reports/ directory.
 
 - Notes
   All transformations and seeding are performed within the same MongoDB collection and database.
@@ -69,7 +69,7 @@ npm run seed
 
 ### Exporting Data to Excel
 
-To export the current state of the MongoDB collection to an Excel file, you can run the export script:
+To export the current state of the MongoDB collection to an Excel file and Json file, you can run the export script:
 
 ```bash
 npm run export

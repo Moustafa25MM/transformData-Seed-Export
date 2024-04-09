@@ -1,0 +1,192 @@
+[
+  {
+    "_id": "66069ff93007b006635c0245",
+    "brandName": "Ward, Hand and Ortiz",
+    "headquarters": "Jastside",
+    "numberOfLocations": 2132,
+    "createdAt": "2024-04-09T04:22:38.880Z",
+    "updatedAt": "2024-04-09T04:22:38.883Z",
+    "yearFounded": 1970
+  },
+  {
+    "_id": "66069ff93007b006635c0246",
+    "brandName": "Ergonomic Frozen Bacon",
+    "yearFounded": 1600,
+    "headquarters": "Gavinstead",
+    "numberOfLocations": 1,
+    "createdAt": "2024-04-09T04:22:38.889Z",
+    "updatedAt": "2024-04-09T04:22:38.891Z"
+  },
+  {
+    "_id": "66069ff93007b006635c0247",
+    "brandName": "Breitenberg, Greenholt and Ledner",
+    "yearFounded": 1982,
+    "headquarters": "Fort Lenna",
+    "numberOfLocations": 1000,
+    "createdAt": "2024-04-09T04:22:38.894Z",
+    "updatedAt": "2024-04-09T04:22:38.896Z"
+  },
+  {
+    "_id": "66069ff93007b006635c0248",
+    "brandName": "Modern Granite Fish",
+    "yearFounded": 1970,
+    "headquarters": "Kundebury",
+    "numberOfLocations": 1,
+    "createdAt": "2024-04-09T04:22:38.898Z",
+    "updatedAt": "2024-04-09T04:22:38.900Z"
+  },
+  {
+    "_id": "66069ff93007b006635c0249",
+    "brandName": "Gorgeous Granite Pizza",
+    "headquarters": "Jonesborough",
+    "numberOfLocations": 1,
+    "createdAt": "2024-04-09T04:22:38.903Z",
+    "updatedAt": "2024-04-09T04:22:38.904Z",
+    "yearFounded": 1980
+  },
+  {
+    "_id": "66069ff93007b006635c024a",
+    "brandName": "Oriental Plastic Pants",
+    "yearFounded": 1970,
+    "headquarters": "Wardfort",
+    "numberOfLocations": 1,
+    "createdAt": "2024-04-09T04:22:38.906Z",
+    "updatedAt": "2024-04-09T04:22:38.908Z"
+  },
+  {
+    "_id": "66069ff93007b006635c024b",
+    "brandName": "Refined Granite Towels",
+    "yearFounded": 1600,
+    "headquarters": "Lemkeland",
+    "numberOfLocations": 1,
+    "createdAt": "2024-04-09T04:22:38.910Z",
+    "updatedAt": "2024-04-09T04:22:38.913Z"
+  },
+  {
+    "_id": "66069ff93007b006635c024c",
+    "brandName": "Corkery Inc",
+    "yearFounded": 1935,
+    "numberOfLocations": 9200,
+    "createdAt": "2024-04-09T04:22:38.915Z",
+    "headquarters": "DuBuqueburgh",
+    "updatedAt": "2024-04-09T04:22:38.916Z"
+  },
+  {
+    "_id": "66069ff93007b006635c024d",
+    "yearFounded": 1600,
+    "headquarters": "West Mylesboro",
+    "numberOfLocations": 1,
+    "brandName": "Licensed Concrete Tuna",
+    "createdAt": "2024-04-09T04:22:38.919Z",
+    "updatedAt": "2024-04-09T04:22:38.920Z"
+  },
+  {
+    "_id": "66069ff93007b006635c024e",
+    "brandName": "Generic Cotton Pizza",
+    "yearFounded": 1600,
+    "headquarters": "North Ralphport",
+    "numberOfLocations": 1,
+    "createdAt": "2024-04-09T04:22:38.923Z",
+    "updatedAt": "2024-04-09T04:22:38.924Z"
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf401",
+    "brandName": "Ondricka Inc",
+    "yearFounded": 1756,
+    "headquarters": "Simeonborough, Monaco",
+    "numberOfLocations": 9947,
+    "createdAt": "2024-04-09T04:22:38.932Z",
+    "updatedAt": "2024-04-09T04:22:38.932Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf403",
+    "brandName": "Moore LLC",
+    "yearFounded": 1651,
+    "headquarters": "Fort Asatown, Monaco",
+    "numberOfLocations": 1842,
+    "createdAt": "2024-04-09T04:22:38.938Z",
+    "updatedAt": "2024-04-09T04:22:38.938Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf405",
+    "brandName": "Keebler - Halvorson",
+    "yearFounded": 1927,
+    "headquarters": "Victorville, Guinea",
+    "numberOfLocations": 5601,
+    "createdAt": "2024-04-09T04:22:38.941Z",
+    "updatedAt": "2024-04-09T04:22:38.941Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf407",
+    "brandName": "Flatley - Conroy",
+    "yearFounded": 1887,
+    "headquarters": "Spencerstead, Somalia",
+    "numberOfLocations": 3230,
+    "createdAt": "2024-04-09T04:22:38.943Z",
+    "updatedAt": "2024-04-09T04:22:38.943Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf409",
+    "brandName": "Rice, Rosenbaum and Collier",
+    "yearFounded": 1751,
+    "headquarters": "Deshawnburgh, Poland",
+    "numberOfLocations": 6473,
+    "createdAt": "2024-04-09T04:22:38.946Z",
+    "updatedAt": "2024-04-09T04:22:38.946Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf40b",
+    "brandName": "Hansen, Boehm and Heathcote",
+    "yearFounded": 1905,
+    "headquarters": "Methuen Town, Yemen",
+    "numberOfLocations": 109,
+    "createdAt": "2024-04-09T04:22:38.948Z",
+    "updatedAt": "2024-04-09T04:22:38.948Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf40d",
+    "brandName": "Schumm, Stroman and Parisian",
+    "yearFounded": 1870,
+    "headquarters": "Fort Evangeline, Turkey",
+    "numberOfLocations": 5939,
+    "createdAt": "2024-04-09T04:22:38.951Z",
+    "updatedAt": "2024-04-09T04:22:38.951Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf40f",
+    "brandName": "Hintz - Gleason",
+    "yearFounded": 1713,
+    "headquarters": "Russelbury, Saint Lucia",
+    "numberOfLocations": 6858,
+    "createdAt": "2024-04-09T04:22:38.952Z",
+    "updatedAt": "2024-04-09T04:22:38.952Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf411",
+    "brandName": "Schumm - Cartwright",
+    "yearFounded": 1802,
+    "headquarters": "South Selinaton, Thailand",
+    "numberOfLocations": 1382,
+    "createdAt": "2024-04-09T04:22:38.955Z",
+    "updatedAt": "2024-04-09T04:22:38.955Z",
+    "__v": 0
+  },
+  {
+    "_id": "6614c28ecadcde6c86ddf413",
+    "brandName": "Parisian Inc",
+    "yearFounded": 1708,
+    "headquarters": "East Rafaelaberg, Botswana",
+    "numberOfLocations": 2246,
+    "createdAt": "2024-04-09T04:22:38.958Z",
+    "updatedAt": "2024-04-09T04:22:38.958Z",
+    "__v": 0
+  }
+]
