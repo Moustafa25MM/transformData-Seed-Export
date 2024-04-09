@@ -1,3 +1,6 @@
+import { transformData } from "./helpers/transformData";
 import { connectToMongoDB } from "./mongooseConnection";
 
-connectToMongoDB();
+connectToMongoDB().then(async ()=>{
+    await transformData();
+})
