@@ -10,51 +10,51 @@ export async function transformData(): Promise<void> {
 
     for (const brand of brands) {
 
-        const update: Partial<IBrand> = {};
-        const unset: Record<string, ''> = {};
+        const updatedBrandFields: Partial<IBrand> = {};
+        const fieldsToRemove: Record<string, ''> = {};
 
         if(brand.brandName){
-            update.brandName = brand.brandName;
+            updatedBrandFields.brandName = brand.brandName;
         }else if( brand.brand && typeof brand.brand == 'object' && brand.brand.name){
-            update.brandName = brand.brand.name;
+            updatedBrandFields.brandName = brand.brand.name;
         }
-        unset.brand = '';
+        fieldsToRemove.brand = '';
 
         const possibleYear = brand.yearCreated || brand.yearsFounded || brand.yearFounded;
         if (typeof possibleYear === 'string') {
-          update.yearFounded = parseInt(possibleYear, 10);
+          updatedBrandFields.yearFounded = parseInt(possibleYear, 10);
         } else if (typeof possibleYear === 'number') {
-          update.yearFounded = possibleYear;
+          updatedBrandFields.yearFounded = possibleYear;
         }
-        if (!update.yearFounded || isNaN(update.yearFounded) || update.yearFounded < 1600) {
-          update.yearFounded = 1600; 
+        if (!updatedBrandFields.yearFounded || isNaN(updatedBrandFields.yearFounded) || updatedBrandFields.yearFounded < 1600) {
+          updatedBrandFields.yearFounded = 1600; 
         }
   
-        unset.yearCreated = ''; 
-        unset.yearsFounded = ''; 
+        fieldsToRemove.yearCreated = ''; 
+        fieldsToRemove.yearsFounded = ''; 
         
         if(brand.headquarters){
-            update.headquarters = brand.headquarters;
+            updatedBrandFields.headquarters = brand.headquarters;
         }else if(brand.hqAddress){
-            update.headquarters = brand.hqAddress;
+            updatedBrandFields.headquarters = brand.hqAddress;
         }
-        unset.hqAddress = ''; 
+        fieldsToRemove.hqAddress = ''; 
         
         let numLocations = parseInt(brand.numberOfLocations as any, 10);
         if (isNaN(numLocations) || numLocations < 1) {
           numLocations = 1; 
         }
-        update.numberOfLocations = numLocations;
+        updatedBrandFields.numberOfLocations = numLocations;
   
-        const validationError = new BrandModel(update).validateSync();
+        const validationError = new BrandModel(updatedBrandFields).validateSync();
         if (validationError) {
           console.error(`Validation error for brand _id: ${brand._id}`, validationError);
           continue; 
         }
         const currentDate = new Date();
         const updateOps: any = {
-            $set: update,
-            $unset: unset,
+            $set: updatedBrandFields,
+            $unset: fieldsToRemove,
             $currentDate: { updatedAt: true }
           };
         if (!brand.createdAt) {

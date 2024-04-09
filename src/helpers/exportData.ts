@@ -45,7 +45,7 @@ export const exportToExcel = async () => {
     console.log(`Exported data to ${filePath}`);
   } catch (error:any) {
     if (error.code === 'EBUSY') {
-      console.error('The file is busy or locked. Please close any programs that might be using it and try again');
+      console.error('The file is busy or locked. Please close any programs that might be using it and try again.');
     } else {
       console.error('An error occurred:', error);
     }
