@@ -51,13 +51,18 @@ export async function transformData(): Promise<void> {
           console.error(`Validation error for brand _id: ${brand._id}`, validationError);
           continue; 
         }
-    
+        const currentDate = new Date();
+        const updateOps: any = {
+            $set: update,
+            $unset: unset,
+            $currentDate: { updatedAt: true }
+          };
+        if (!brand.createdAt) {
+        updateOps.$set.createdAt = currentDate;
+        }
         await mongoose.connection.collection('brands').updateOne(
             { _id: brand._id },
-            {
-              $set: update,
-              $unset: unset
-            },
+            updateOps,
             { writeConcern: { w: "majority" } }
           );
         
